@@ -3,6 +3,7 @@ import { combineReducers } from "redux";
 const TodoList = (state = [], action) => {
     switch (action.type) {
         case 'newTask':
+            console.log('yea');
             return [...state, { task: action.task, isDeleted: false, checked: false }];
         case 'check':
             return [...action.index];

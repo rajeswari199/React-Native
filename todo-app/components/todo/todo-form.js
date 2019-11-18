@@ -16,7 +16,7 @@ class TodoForm extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View>
         <TextInput
           value={this.state.task}
           placeholder="Add Task"
@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'stretch',
     justifyContent: 'center',
+    margin: 20
   },
 });
 
