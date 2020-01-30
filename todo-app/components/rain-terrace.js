@@ -1,7 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, TextInput, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 import * as _ from 'lodash'
-import { ThemeProvider } from 'react-native-paper';
 
 class RainTerrace extends React.Component {
     constructor() {

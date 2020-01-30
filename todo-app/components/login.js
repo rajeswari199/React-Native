@@ -5,6 +5,7 @@ class Login extends React.Component {
     static navigationOptions = {
         headerShown: false
     };
+    
     constructor() {
         super();
         this.state = {
