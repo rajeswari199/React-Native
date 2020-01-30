@@ -13,10 +13,9 @@ class App extends React.Component {
     return (
       <Provider store={store}>
         <Navigation />
-        {/* <Weather /> */}
       </Provider >
     );
   }
 }
 
-export default App;
+export default App

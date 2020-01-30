@@ -54,6 +54,7 @@ class RainTerrace extends React.Component {
                                 <View style={styles.block} keyExtractor={(item, index) => `${index.toString()}derjk`}>
                                     {_.times(_.sum([height.blue, height.green]), (item, index) => index + 1).map((item, index) =>
                                         <View keyExtractor={(item, index) => index.toString()}>
+                                            {/* <Text>{index}</Text> */}
                                             <View style={index + 1 <= height.blue ? styles.water : styles.square}></View>
                                         </View>
                                     )
@@ -85,38 +86,32 @@ class RainTerrace extends React.Component {
 const styles = StyleSheet.create({
     layout: {
         flex: 1,
-        alignContent: 'center',
         alignItems: 'center',
-        justifyContent: 'center',
         height: '90%',
         width: '90%'
     },
     container: {
         flex: 1,
         backgroundColor: '#fff',
-        height: '70%',
-        width: '70%'
+        height: '80%',
+        width: '80%'
     },
     square: {
         height: 80,
-        alignContent: 'flex-end',
-        flexDirection: 'row',
         backgroundColor: 'green',
         borderColor: 'black',
         borderWidth: 5,
     },
     water: {
         height: 80,
-        alignContent: 'flex-end',
-        flexDirection: 'row',
         backgroundColor: 'blue',
-        borderColor: 'black',
-        borderWidth: 5,
     },
     block: {
+        flexShrink: 1,
         flex: 1,
-        alignContent: 'flex-end',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        borderColor: 'black',
+        borderWidth: 5,
     },
     operations: {
         flex: 1
