@@ -5,6 +5,8 @@ import Todo from './components/todo';
 import RainTerrace from './components/rain-terrace';
 import Links from './components/links';
 import Weather from './components/weather/weather';
+import Levenshtein from './components/levenshteinProblem';
+import Hoc from './components/HOC';
 
 const MainNavigator = createStackNavigator({
     Login: {
@@ -14,6 +16,8 @@ const MainNavigator = createStackNavigator({
     Todo: { screen: Todo },
     RainTerrace: { screen: RainTerrace },
     Links: { screen: Links },
+    Levenshtein: { screen: Levenshtein },
+    Hoc: { screen: Hoc },
     Weather: {
         screen: Weather, navigationOptions: {
             title: 'Weather....'

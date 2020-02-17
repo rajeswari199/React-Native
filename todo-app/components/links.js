@@ -8,6 +8,8 @@ class Links extends React.Component {
                 <Button title="TODO" onPress={() => this.props.navigation.navigate('Todo')} />
                 <Button title="RAIN TERRACE" onPress={() => this.props.navigation.navigate('RainTerrace')} />
                 <Button title="WEATHER" onPress={() => this.props.navigation.navigate('Weather')} />
+                <Button title="LEVENSHTEIN" onPress={() => this.props.navigation.navigate('Levenshtein')} />
+                <Button title="HOC" onPress={() => this.props.navigation.navigate('Hoc')} />
             </View>
         );
     }
